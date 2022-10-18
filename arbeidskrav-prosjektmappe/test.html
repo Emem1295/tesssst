@@ -54,6 +54,7 @@
       <img id="tree-2" src="images/tree.png" alt="" />
       <img id="tree-1" src="images/tree.png" alt="" />
     </div>
+    ''
     <!-- end container-->
 
     <!-- Her skrives det ut informasjon om hva brukeren gjør og hva som skjer. -->
@@ -67,33 +68,42 @@
     </div>
 
     <script>
-      // tre nr:1 
+
+
+      var materialinfo = document.getElementById("material-info")
+      var counter = 0;
+
+      // tre nr:1
 
       var tree1 = document.getElementById("tree-1");
 
       tree1.onclick = treeone;
 
-      function treeone(){
-        alert("hello")
-      }
-      //tre nr:2
-      var tree2 = document.getElementById("tree-2");
+          function treeone(){
 
-      tree2.onclick = treetwo;
+                              counter++;
 
-      function treetwo(){
-        alert("hello2")
-      }
-      //tre nr:3
-      var tree3 = document.getElementById("tree-3");
+                              materialinfo.innerHTML = `Treverk: ${counter} enheter. Metall: 0 enheter. Antall bygninger: 0. Styrke: 10`
 
-      tree3.onclick = treethree;
+      /*
+              }
+              //tre nr:2
+              var tree2 = document.getElementById("tree-2");
 
-      function treethree(){
-        alert("hello3")
-      }
+              tree2.onclick = treetwo;
 
+              function treetwo(){
+                alert("hello2")
+              }
+              //tre nr:3
+              var tree3 = document.getElementById("tree-3");
 
+              tree3.onclick = treethree;
+
+              function treethree(){
+                alert("hello3")
+              }
+        */
     </script>
   </body>
 </html>
